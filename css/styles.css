@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Arvo');
+/* font-family: 'Arvo', serif; */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arvo', serif;
+    background-color: #EDEDED;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    font-size: 45px;
+}
+
+h1, main {
+    margin: 50px 0;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    height: 540px;
+    margin-bottom: 80px;
+    position: relative;
+    width: 1000px;
+    /* besoin width précis pour les absolute qui se réfèrent au main */
+}
+
+a {
+    outline:none;
+}
+
+#corps {
+    background-image: url('../img/qijx.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 300px;
+    position: relative;
+}
+
+#placeholder {
+    width: 210px;
+}
+
+.desc {
+    height: 0.5%;
+    font-size: 1.1rem;
+    line-height: 1.3rem;
+    text-align: left;
+    overflow: hidden;
+
+    filter: opacity(0%);
+    transition: filter 300ms;
+}
+
+
+.cercle {
+    background-color: black;
+    border-radius: 50%;
+    height: 62px;
+    width: 62px;
+    filter: opacity(70%);
+    z-index: 9;
+}
+
+.cercle:hover {
+    background-color: red;
+}
+
+/* positionnements et relations descriptions */
+
+#epaule {
+    position: relative;
+    top: 80px;
+    left: 420px;
+}
+#main{
+    position: relative;
+    top: 250px;
+    left: 360px;
+}
+#genoux{
+    position: relative;
+    top: 360px;
+    left: 340px;
+}
+#pied{
+    position: relative;
+    top: 470px;
+    left: 210px;
+}
+#hanche{
+    position: relative;
+    top: 260px;
+    left: 280px;
+}
+#bras{
+    position: relative;
+    top: 200px;
+    left: 380px;
+}
+
+#epaule:hover ~ #placeholder #desc-epaule {
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
+
+#main:hover ~ #placeholder #desc-main {
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
+
+#genoux:hover ~ #placeholder #desc-genoux {
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
+
+#pied:hover ~ #placeholder #desc-pied {
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
+
+#hanche:hover ~ #placeholder #desc-hanche{
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
+
+#bras:hover ~ #placeholder #desc-bras{
+    height: 100%;
+    filter: opacity(100%);
+    transition: filter 300ms;
+}
